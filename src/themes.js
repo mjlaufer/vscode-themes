@@ -83,7 +83,7 @@ const gruvboxLight = {
     foreground: '#3c3836',
     foreground2: '#504945',
 
-    gray: '7c6f64',
+    gray: '#7c6f64',
 
     yellow: '#b57614',
     orange: '#af3a03',

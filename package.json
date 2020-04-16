@@ -31,7 +31,7 @@
       {
         "label": "MJL Solarized Light",
         "uiTheme": "vs",
-        "path": "./themes/solarized-dark.json"
+        "path": "./themes/solarized-light.json"
       },
       {
         "label": "MJL Gruvbox Dark",
