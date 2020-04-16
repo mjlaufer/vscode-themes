@@ -1,0 +1,56 @@
+{
+  "name": "classic-themes",
+  "displayName": "Classic Themes",
+  "description": "Collection of classic themes for VS Code",
+  "version": "0.1.0",
+  "publisher": "mjlaufer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjlaufer/classic-themes"
+  },
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "keywords": [
+    "theme",
+    "classic",
+    "solarized",
+    "gruvbox"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "MJL Solarized Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/solarized-dark.json"
+      },
+      {
+        "label": "MJL Solarized Light",
+        "uiTheme": "vs",
+        "path": "./themes/solarized-dark.json"
+      },
+      {
+        "label": "MJL Gruvbox Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gruvbox-dark.json"
+      },
+      {
+        "label": "MJL Gruvbox Light",
+        "uiTheme": "vs",
+        "path": "./themes/gruvbox-light.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node src/index.js",
+    "prettier": "prettier --write '**/*.{js,json}'"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^2.0.4"
+  }
+}
