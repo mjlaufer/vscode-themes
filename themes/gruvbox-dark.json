@@ -252,39 +252,41 @@
     {
       "name": "Comments",
       "scope": "comment, punctuation.definition.comment",
-      "settings": { "foreground": "#fb4934" }
-    },
-    {
-      "name": "Braces, Punctuation, Escape Characters, Misc",
-      "scope": "meta.brace, punctuation, punctuation.definition.tag, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, constant.other.color, constant.character.escape, keyword.other.template, keyword.other.substitution",
-      "settings": { "foreground": "#ebdbb2" }
-    },
-    {
-      "name": "Keyword, Storage",
-      "scope": "keyword, storage.type, storage.modifier",
-      "settings": { "foreground": "#ebdbb2" }
-    },
-    {
-      "name": "Language methods, Sub-methods",
-      "scope": "variable.language",
-      "settings": { "foreground": "#ebdbb2" }
+      "settings": { "foreground": "#d3869b" }
     },
     {
       "name": "Variable, Object-Literal Key, JSON Key, Built-In Constant, CSS Unit",
       "scope": "variable, meta.object-literal.key, source.json meta.structure.dictionary.json support.type.property-name.json, support.constant, keyword.other.unit",
+      "settings": { "foreground": "#ebdbb2" }
+    },
+    {
+      "name": "Braces, Punctuation, Misc",
+      "scope": "meta.brace, punctuation, punctuation.definition.tag, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, constant.other.color, keyword.other.template, keyword.other.substitution",
+      "settings": { "foreground": "#ebdbb2" }
+    },
+    { "name": "Keyword", "scope": "keyword", "settings": { "foreground": "#8ec07c" } },
+    { "name": "Operator", "scope": "keyword.operator", "settings": { "foreground": "#8ec07c" } },
+    {
+      "name": "Template Literal Nesting Templates",
+      "scope": "punctuation.definition.template-expression",
       "settings": { "foreground": "#8ec07c" }
     },
-    { "name": "String", "scope": "string", "settings": { "foreground": "#b8bb26" } },
-    { "name": "Regex", "scope": "string.regexp", "settings": { "foreground": "#fe8019" } },
     {
-      "name": "Number, Constant",
-      "scope": "constant.numeric, constant.language, constant.character",
-      "settings": { "foreground": "#fe8019" }
+      "name": "Storage",
+      "scope": "storage.type, storage.modifier",
+      "settings": { "foreground": "#fb4934" }
     },
     {
-      "name": "Operator, Function Arrow",
-      "scope": "keyword.operator, storage.type.function.arrow",
-      "settings": { "foreground": "#d3869b" }
+      "name": "Language methods, Sub-methods",
+      "scope": "variable.language",
+      "settings": { "foreground": "#fb4934" }
+    },
+    { "name": "String", "scope": "string", "settings": { "foreground": "#b8bb26" } },
+    { "name": "Regex", "scope": "string.regexp", "settings": { "foreground": "#b8bb26" } },
+    {
+      "name": "Number, Constant, Escape Characters",
+      "scope": "constant.numeric, constant.language, constant.character, constant.character.escape",
+      "settings": { "foreground": "#fe8019" }
     },
     {
       "name": "Function, Special Method, Block Level",
@@ -293,7 +295,7 @@
     },
     {
       "name": "Class, Inherited Class, Built-In Class",
-      "scope": "entity.name.class, entity.name.type.class, entity.other.inherited-class, new.expr entity.name.type, support.class.builtin, ",
+      "scope": "entity.name.class, entity.name.type.class, entity.other.inherited-class, new.expr entity.name.type, support.class.builtin",
       "settings": { "foreground": "#fabd2f" }
     },
     {

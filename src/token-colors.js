@@ -3,29 +3,7 @@ module.exports = (theme) => [
         name: 'Comments',
         scope: 'comment, punctuation.definition.comment',
         settings: {
-            foreground: theme.red,
-        },
-    },
-    {
-        name: 'Braces, Punctuation, Escape Characters, Misc',
-        scope:
-            'meta.brace, punctuation, punctuation.definition.tag, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, constant.other.color, constant.character.escape, keyword.other.template, keyword.other.substitution',
-        settings: {
-            foreground: theme.foreground,
-        },
-    },
-    {
-        name: 'Keyword, Storage',
-        scope: 'keyword, storage.type, storage.modifier',
-        settings: {
-            foreground: theme.foreground,
-        },
-    },
-    {
-        name: 'Language methods, Sub-methods',
-        scope: 'variable.language',
-        settings: {
-            foreground: theme.foreground,
+            foreground: theme.magenta,
         },
     },
     {
@@ -33,7 +11,50 @@ module.exports = (theme) => [
         scope:
             'variable, meta.object-literal.key, source.json meta.structure.dictionary.json support.type.property-name.json, support.constant, keyword.other.unit',
         settings: {
+            foreground: theme.foreground,
+        },
+    },
+    {
+        name: 'Braces, Punctuation, Misc',
+        scope:
+            'meta.brace, punctuation, punctuation.definition.tag, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, constant.other.color, keyword.other.template, keyword.other.substitution',
+        settings: {
+            foreground: theme.foreground,
+        },
+    },
+    {
+        name: 'Keyword',
+        scope: 'keyword',
+        settings: {
             foreground: theme.cyan,
+        },
+    },
+    {
+        name: 'Operator',
+        scope: 'keyword.operator',
+        settings: {
+            foreground: theme.cyan,
+        },
+    },
+    {
+        name: 'Template Literal Nesting Templates',
+        scope: 'punctuation.definition.template-expression',
+        settings: {
+            foreground: theme.cyan,
+        },
+    },
+    {
+        name: 'Storage',
+        scope: 'storage.type, storage.modifier',
+        settings: {
+            foreground: theme.red,
+        },
+    },
+    {
+        name: 'Language methods, Sub-methods',
+        scope: 'variable.language',
+        settings: {
+            foreground: theme.red,
         },
     },
     {
@@ -47,21 +68,14 @@ module.exports = (theme) => [
         name: 'Regex',
         scope: 'string.regexp',
         settings: {
-            foreground: theme.orange,
+            foreground: theme.green,
         },
     },
     {
-        name: 'Number, Constant',
-        scope: 'constant.numeric, constant.language, constant.character',
+        name: 'Number, Constant, Escape Characters',
+        scope: 'constant.numeric, constant.language, constant.character, constant.character.escape',
         settings: {
             foreground: theme.orange,
-        },
-    },
-    {
-        name: 'Operator, Function Arrow',
-        scope: 'keyword.operator, storage.type.function.arrow',
-        settings: {
-            foreground: theme.magenta,
         },
     },
     {
@@ -75,7 +89,7 @@ module.exports = (theme) => [
     {
         name: 'Class, Inherited Class, Built-In Class',
         scope:
-            'entity.name.class, entity.name.type.class, entity.other.inherited-class, new.expr entity.name.type, support.class.builtin, ',
+            'entity.name.class, entity.name.type.class, entity.other.inherited-class, new.expr entity.name.type, support.class.builtin',
         settings: {
             foreground: theme.yellow,
         },
