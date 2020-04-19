@@ -9,7 +9,7 @@ module.exports = (theme) => [
     {
         name: 'Variable, Object-Literal Key, JSON Key, Built-In Constant, CSS Unit',
         scope:
-            'variable, meta.object-literal.key, source.json meta.structure.dictionary.json support.type.property-name.json, support.constant, keyword.other.unit',
+            'variable, meta.object-literal.key, source.json meta.structure.dictionary.json support.type.property-name.json',
         settings: {
             foreground: theme.foreground,
         },
@@ -72,8 +72,9 @@ module.exports = (theme) => [
         },
     },
     {
-        name: 'Number, Constant, Escape Characters',
-        scope: 'constant.numeric, constant.language, constant.character, constant.character.escape',
+        name: 'Number, Constant, Escape Characters, Function Argument',
+        scope:
+            'constant.numeric, constant.language, constant.character, constant.character.escape, support.constant, keyword.other.unit, variable.parameter',
         settings: {
             foreground: theme.orange,
         },

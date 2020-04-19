@@ -256,7 +256,7 @@
     },
     {
       "name": "Variable, Object-Literal Key, JSON Key, Built-In Constant, CSS Unit",
-      "scope": "variable, meta.object-literal.key, source.json meta.structure.dictionary.json support.type.property-name.json, support.constant, keyword.other.unit",
+      "scope": "variable, meta.object-literal.key, source.json meta.structure.dictionary.json support.type.property-name.json",
       "settings": { "foreground": "#d4d4d4" }
     },
     {
@@ -284,8 +284,8 @@
     { "name": "String", "scope": "string", "settings": { "foreground": "#99c794" } },
     { "name": "Regex", "scope": "string.regexp", "settings": { "foreground": "#99c794" } },
     {
-      "name": "Number, Constant, Escape Characters",
-      "scope": "constant.numeric, constant.language, constant.character, constant.character.escape",
+      "name": "Number, Constant, Escape Characters, Function Argument",
+      "scope": "constant.numeric, constant.language, constant.character, constant.character.escape, support.constant, keyword.other.unit, variable.parameter",
       "settings": { "foreground": "#f99157" }
     },
     {
