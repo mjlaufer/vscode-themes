@@ -1,42 +1,18 @@
-const solarizedDark = {
+const transparentColorsDark = {
     transparent00: '#ffffff00',
     transparent15: '#ffffff0f',
     transparent31: '#ffffff1f',
     transparent54: '#ffffff36',
-
-    background: '#002b36',
-    background2: '#073642',
-    background3: '#184e5c',
-
-    foreground: '#839496',
-    foreground2: '#586e75',
-
-    gray: '#586e75',
-
-    yellow: '#b58900',
-    orange: '#cb4b16',
-    red: '#dc322f',
-    magenta: '#d33682',
-    blue: '#268bd2',
-    cyan: '#2aa198',
-    green: '#859900',
 };
 
-const solarizedLight = {
+const transparentColorsLight = {
     transparent00: '#00000000',
     transparent15: '#0000000f',
     transparent31: '#0000001f',
     transparent54: '#00000036',
+};
 
-    background: '#fdf6e3',
-    background2: '#eee8d5',
-    background3: '#e2dcc9',
-
-    foreground: '#657b83',
-    foreground2: '#93a1a1',
-
-    gray: '#93a1a1',
-
+const solarizedTokenColors = {
     yellow: '#b58900',
     orange: '#cb4b16',
     red: '#dc322f',
@@ -46,21 +22,7 @@ const solarizedLight = {
     green: '#859900',
 };
 
-const gruvboxDark = {
-    transparent00: '#ffffff00',
-    transparent15: '#ffffff0f',
-    transparent31: '#ffffff1f',
-    transparent54: '#ffffff36',
-
-    background: '#282828',
-    background2: '#3c3836',
-    background3: '#504945',
-
-    foreground: '#ebdbb2',
-    foreground2: '#d5c4a1',
-
-    gray: '#a89984',
-
+const gruvboxDarkTokenColors = {
     yellow: '#fabd2f',
     orange: '#fe8019',
     red: '#fb4934',
@@ -70,21 +32,7 @@ const gruvboxDark = {
     green: '#b8bb26',
 };
 
-const gruvboxLight = {
-    transparent00: '#00000000',
-    transparent15: '#0000000f',
-    transparent31: '#0000001f',
-    transparent54: '#00000036',
-
-    background: '#fbf1c7',
-    background2: '#ebdbb2',
-    background3: '#d5c4a1',
-
-    foreground: '#3c3836',
-    foreground2: '#504945',
-
-    gray: '#7c6f64',
-
+const gruvboxLightTokenColors = {
     yellow: '#b57614',
     orange: '#af3a03',
     red: '#9d0006',
@@ -92,6 +40,60 @@ const gruvboxLight = {
     blue: '#076678',
     cyan: '#427b58',
     green: '#79740e',
+};
+
+const solarizedDark = {
+    background: '#002b36',
+    background2: '#073642',
+    background3: '#184e5c',
+    foreground: '#839496',
+    foreground2: '#586e75',
+    gray: '#586e75',
+    ...transparentColorsDark,
+    ...solarizedTokenColors,
+};
+
+const solarizedLight = {
+    background: '#fdf6e3',
+    background2: '#eee8d5',
+    background3: '#e2dcc9',
+    foreground: '#657b83',
+    foreground2: '#93a1a1',
+    gray: '#93a1a1',
+    ...transparentColorsLight,
+    ...solarizedTokenColors,
+};
+
+const gruvboxDark = {
+    background: '#282828',
+    background2: '#3c3836',
+    background3: '#504945',
+    foreground: '#ebdbb2',
+    foreground2: '#d5c4a1',
+    gray: '#a89984',
+    ...transparentColorsDark,
+    ...gruvboxDarkTokenColors,
+};
+
+const gruvboxLight = {
+    background: '#fbf1c7',
+    background2: '#ebdbb2',
+    background3: '#d5c4a1',
+    foreground: '#3c3836',
+    foreground2: '#504945',
+    gray: '#7c6f64',
+    ...transparentColorsLight,
+    ...gruvboxLightTokenColors,
+};
+
+const gruvboxDarkContrast = {
+    ...gruvboxDark,
+    background: '#1d2021',
+};
+
+const gruvboxLightContrast = {
+    ...gruvboxLight,
+    background: '#f9f5d7',
 };
 
 module.exports = [
@@ -114,5 +116,15 @@ module.exports = [
         name: 'Gruvbox Light',
         dest: 'themes/gruvbox-light.json',
         colors: gruvboxLight,
+    },
+    {
+        name: 'Gruvbox Dark Contrast',
+        dest: 'themes/gruvbox-dark-contrast.json',
+        colors: gruvboxDarkContrast,
+    },
+    {
+        name: 'Gruvbox Light Contrast',
+        dest: 'themes/gruvbox-light-contrast.json',
+        colors: gruvboxLightContrast,
     },
 ];
