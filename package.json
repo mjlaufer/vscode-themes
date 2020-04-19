@@ -39,19 +39,24 @@
         "path": "./themes/gruvbox-dark.json"
       },
       {
-        "label": "MJL Gruvbox Light",
-        "uiTheme": "vs",
-        "path": "./themes/gruvbox-light.json"
-      },
-      {
         "label": "MJL Gruvbox Dark Contrast",
         "uiTheme": "vs-dark",
         "path": "./themes/gruvbox-dark-contrast.json"
       },
       {
+        "label": "MJL Gruvbox Light",
+        "uiTheme": "vs",
+        "path": "./themes/gruvbox-light.json"
+      },
+      {
         "label": "MJL Gruvbox Light Contrast",
         "uiTheme": "vs",
         "path": "./themes/gruvbox-light-contrast.json"
+      },
+      {
+        "label": "MJL Oceanic Next",
+        "uiTheme": "vs-dark",
+        "path": "./themes/oceanic-next.json"
       }
     ]
   },

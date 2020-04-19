@@ -42,6 +42,16 @@ const gruvboxLightTokenColors = {
     green: '#79740e',
 };
 
+const oceanicNextTokenColors = {
+    yellow: '#fac863',
+    orange: '#f99157',
+    red: '#ec5f67',
+    magenta: '#c594c5',
+    blue: '#6699cc',
+    cyan: '#5fb3b3',
+    green: '#99c794',
+};
+
 const solarizedDark = {
     background: '#002b36',
     background2: '#073642',
@@ -66,7 +76,7 @@ const solarizedLight = {
 
 const gruvboxDark = {
     background: '#282828',
-    background2: '#3c3836',
+    background2: '#1d2021',
     background3: '#504945',
     foreground: '#ebdbb2',
     foreground2: '#d5c4a1',
@@ -75,9 +85,15 @@ const gruvboxDark = {
     ...gruvboxDarkTokenColors,
 };
 
+const gruvboxDarkContrast = {
+    ...gruvboxDark,
+    background: '#1d2021',
+    background2: '#282828',
+};
+
 const gruvboxLight = {
     background: '#fbf1c7',
-    background2: '#ebdbb2',
+    background2: '#f9f5d7',
     background3: '#d5c4a1',
     foreground: '#3c3836',
     foreground2: '#504945',
@@ -86,14 +102,21 @@ const gruvboxLight = {
     ...gruvboxLightTokenColors,
 };
 
-const gruvboxDarkContrast = {
-    ...gruvboxDark,
-    background: '#1d2021',
-};
-
 const gruvboxLightContrast = {
     ...gruvboxLight,
     background: '#f9f5d7',
+    background2: '#fbf1c7',
+};
+
+const oceanicNext = {
+    background: '#242b2e',
+    background2: '#1d2325',
+    background3: '#30373a',
+    foreground: '#d4d4d4',
+    foreground2: '#7f7f7f',
+    gray: '#545454',
+    ...transparentColorsDark,
+    ...oceanicNextTokenColors,
 };
 
 module.exports = [
@@ -113,18 +136,23 @@ module.exports = [
         colors: gruvboxDark,
     },
     {
-        name: 'Gruvbox Light',
-        dest: 'themes/gruvbox-light.json',
-        colors: gruvboxLight,
-    },
-    {
         name: 'Gruvbox Dark Contrast',
         dest: 'themes/gruvbox-dark-contrast.json',
         colors: gruvboxDarkContrast,
     },
     {
+        name: 'Gruvbox Light',
+        dest: 'themes/gruvbox-light.json',
+        colors: gruvboxLight,
+    },
+    {
         name: 'Gruvbox Light Contrast',
         dest: 'themes/gruvbox-light-contrast.json',
         colors: gruvboxLightContrast,
+    },
+    {
+        name: 'Oceanic Next',
+        dest: 'themes/oceanic-next.json',
+        colors: oceanicNext,
     },
 ];

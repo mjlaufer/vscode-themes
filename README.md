@@ -4,6 +4,7 @@
 -   Solarized Light
 -   Gruvbox Dark
 -   Gruvbox Light
+-   Oceanic Next
 
 ## License
 
