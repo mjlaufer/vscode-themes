@@ -22,46 +22,6 @@ const solarizedTokenColors = {
     green: '#859900',
 };
 
-const gruvboxDarkTokenColors = {
-    yellow: '#fabd2f',
-    orange: '#fe8019',
-    red: '#fb4934',
-    magenta: '#d3869b',
-    blue: '#83a598',
-    cyan: '#8ec07c',
-    green: '#b8bb26',
-};
-
-const gruvboxLightTokenColors = {
-    yellow: '#b57614',
-    orange: '#af3a03',
-    red: '#9d0006',
-    magenta: '#8f3f71',
-    blue: '#076678',
-    cyan: '#427b58',
-    green: '#79740e',
-};
-
-const oceanicNextTokenColors = {
-    yellow: '#fac863',
-    orange: '#f99157',
-    red: '#ec5f67',
-    magenta: '#c594c5',
-    blue: '#6699cc',
-    cyan: '#5fb3b3',
-    green: '#99c794',
-};
-
-const atomOneDarkTokenColors = {
-    yellow: '#e5c07b',
-    orange: '#d19a66',
-    red: '#e06c75',
-    magenta: '#c678dd',
-    blue: '#61afef',
-    cyan: '#56b6c2',
-    green: '#98c379',
-};
-
 const solarizedDark = {
     background: '#002b36',
     background2: '#073642',
@@ -69,8 +29,8 @@ const solarizedDark = {
     foreground: '#839496',
     foreground2: '#586e75',
     gray: '#586e75',
-    ...transparentColorsDark,
     ...solarizedTokenColors,
+    ...transparentColorsDark,
 };
 
 const solarizedLight = {
@@ -80,8 +40,8 @@ const solarizedLight = {
     foreground: '#657b83',
     foreground2: '#93a1a1',
     gray: '#93a1a1',
-    ...transparentColorsLight,
     ...solarizedTokenColors,
+    ...transparentColorsLight,
 };
 
 const gruvboxDark = {
@@ -91,8 +51,14 @@ const gruvboxDark = {
     foreground: '#ebdbb2',
     foreground2: '#d5c4a1',
     gray: '#a89984',
+    yellow: '#fabd2f',
+    orange: '#fe8019',
+    red: '#fb4934',
+    magenta: '#d3869b',
+    blue: '#83a598',
+    cyan: '#8ec07c',
+    green: '#b8bb26',
     ...transparentColorsDark,
-    ...gruvboxDarkTokenColors,
 };
 
 const gruvboxDarkContrast = {
@@ -108,8 +74,14 @@ const gruvboxLight = {
     foreground: '#3c3836',
     foreground2: '#504945',
     gray: '#7c6f64',
+    yellow: '#b57614',
+    orange: '#af3a03',
+    red: '#9d0006',
+    magenta: '#8f3f71',
+    blue: '#076678',
+    cyan: '#427b58',
+    green: '#79740e',
     ...transparentColorsLight,
-    ...gruvboxLightTokenColors,
 };
 
 const gruvboxLightContrast = {
@@ -125,8 +97,14 @@ const oceanicNext = {
     foreground: '#d4d4d4',
     foreground2: '#7f7f7f',
     gray: '#545454',
+    yellow: '#fac863',
+    orange: '#f99157',
+    red: '#ec5f67',
+    magenta: '#c594c5',
+    blue: '#6699cc',
+    cyan: '#5fb3b3',
+    green: '#99c794',
     ...transparentColorsDark,
-    ...oceanicNextTokenColors,
 };
 
 const atomOneDark = {
@@ -136,8 +114,14 @@ const atomOneDark = {
     foreground: '#abb2bf',
     foreground2: '#9da5b4',
     gray: '#5c6370',
+    yellow: '#e5c07b',
+    orange: '#d19a66',
+    red: '#e06c75',
+    magenta: '#c678dd',
+    blue: '#61afef',
+    cyan: '#56b6c2',
+    green: '#98c379',
     ...transparentColorsDark,
-    ...atomOneDarkTokenColors,
 };
 
 module.exports = [

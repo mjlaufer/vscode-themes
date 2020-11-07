@@ -3,7 +3,7 @@ module.exports = (theme) => [
         name: 'Comments',
         scope: 'comment, punctuation.definition.comment',
         settings: {
-            foreground: theme.magenta,
+            foreground: theme.gray,
         },
     },
     {
@@ -65,16 +65,23 @@ module.exports = (theme) => [
         },
     },
     {
+        name: 'Constant, Number',
+        scope: 'constant.language, constant.numeric, keyword.other.unit',
+        settings: {
+            foreground: theme.magenta,
+        }
+    },
+    {
         name: 'Regex',
         scope: 'string.regexp',
         settings: {
-            foreground: theme.green,
+            foreground: theme.magenta,
         },
     },
     {
-        name: 'Number, Constant, Escape Characters, Function Argument',
+        name: 'Escape Characters, Function Argument',
         scope:
-            'constant.numeric, constant.language, constant.character, constant.character.escape, support.constant, keyword.other.unit, variable.parameter',
+            'constant.character, constant.character.escape, support.constant, variable.parameter',
         settings: {
             foreground: theme.orange,
         },
@@ -119,6 +126,13 @@ module.exports = (theme) => [
     {
         name: 'HTML/JSX Attributes',
         scope: 'entity.other.attribute-name',
+        settings: {
+            foreground: theme.magenta,
+        },
+    },
+    {
+        name: 'CSS Attributes',
+        scope: 'entity.other.attribute-name.id.css, entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css',
         settings: {
             foreground: theme.cyan,
         },
