@@ -52,6 +52,16 @@ const oceanicNextTokenColors = {
     green: '#99c794',
 };
 
+const atomOneDarkTokenColors = {
+    yellow: '#e5c07b',
+    orange: '#d19a66',
+    red: '#e06c75',
+    magenta: '#c678dd',
+    blue: '#61afef',
+    cyan: '#56b6c2',
+    green: '#98c379',
+};
+
 const solarizedDark = {
     background: '#002b36',
     background2: '#073642',
@@ -119,6 +129,17 @@ const oceanicNext = {
     ...oceanicNextTokenColors,
 };
 
+const atomOneDark = {
+    background: '#282c34',
+    background2: '#21252b',
+    background3: '#333842',
+    foreground: '#abb2bf',
+    foreground2: '#9da5b4',
+    gray: '#5c6370',
+    ...transparentColorsDark,
+    ...atomOneDarkTokenColors,
+};
+
 module.exports = [
     {
         name: 'Solarized Dark',
@@ -154,5 +175,10 @@ module.exports = [
         name: 'Oceanic Next',
         dest: 'themes/oceanic-next.json',
         colors: oceanicNext,
+    },
+    {
+        name: 'Atom One Dark',
+        dest: 'themes/atom-one-dark.json',
+        colors: atomOneDark,
     },
 ];

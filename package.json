@@ -1,22 +1,19 @@
 {
-  "name": "classic-themes",
-  "displayName": "Classic Themes",
-  "description": "Collection of classic themes for VS Code",
+  "name": "vscode-themes",
+  "displayName": "VS Code Themes",
+  "description": "",
   "version": "0.1.0",
   "publisher": "mjlaufer",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mjlaufer/classic-themes"
+    "url": "https://github.com/mjlaufer/vscode-themes"
   },
   "engines": {
     "vscode": "^1.41.0"
   },
   "keywords": [
-    "theme",
-    "classic",
-    "solarized",
-    "gruvbox"
+    "theme"
   ],
   "categories": [
     "Themes"
@@ -57,6 +54,11 @@
         "label": "MJL Oceanic Next",
         "uiTheme": "vs-dark",
         "path": "./themes/oceanic-next.json"
+      },
+      {
+        "label": "MJL Atom One Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/atom-one-dark.json"
       }
     ]
   },

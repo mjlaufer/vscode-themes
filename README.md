@@ -5,6 +5,7 @@
 -   Gruvbox Dark
 -   Gruvbox Light
 -   Oceanic Next
+-   Atom One Dark
 
 ## License
 
