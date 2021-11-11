@@ -4,7 +4,7 @@ const themes = require('./themes');
 const createTokenColors = require('./token-colors');
 
 for (let { colors, dest, name } of themes) {
-    const theme = generateTheme(colors);
+    const theme = generateTheme(name, colors);
 
     fs.writeFile(dest, JSON.stringify(theme), (error) => {
         const log = error
@@ -21,9 +21,9 @@ for (let { colors, dest, name } of themes) {
     });
 }
 
-function generateTheme(colors) {
+function generateTheme(name, colors) {
     return {
-        name: 'Solarized Dark Theme',
+        name,
         colors: createColors(colors),
         tokenColors: createTokenColors(colors),
     };
